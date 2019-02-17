@@ -1,0 +1,42 @@
+.storiesDiv {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.name {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 5.4em;
+  line-height: 1.8em;
+  text-decoration-color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+@media only screen and (max-width: 768px) {
+  .storiesDiv {
+    grid-template-columns: 1fr;
+  }
+}
+
+#paulClark {
+  color: cadetblue;
+}
+
+.category {
+  text-transform: capitalize;
+  color: #a8a8a8;
+  font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
